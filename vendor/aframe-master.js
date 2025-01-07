@@ -26173,7 +26173,7 @@ module.exports = function createQuadElements(array, opt) {
 
 		var framebufferScaleFactor = 1.0;
 
-		var frameOfReferenceType = 'stage';
+		var frameOfReferenceType = 'eye-level';
 
 		if ( typeof window !== 'undefined' && 'VRFrameData' in window ) {
 
@@ -26576,7 +26576,7 @@ module.exports = function createQuadElements(array, opt) {
 		var framebufferScaleFactor = 1.0;
 
 		var frameOfReference = null;
-		var frameOfReferenceType = 'stage';
+		var frameOfReferenceType = 'eye-level';
 
 		var pose = null;
 		var poseTarget = null;
