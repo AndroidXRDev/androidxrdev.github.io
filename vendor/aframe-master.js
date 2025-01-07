@@ -73475,7 +73475,7 @@ module.exports.AScene = registerElement('a-scene', {
               self.xrSession = xrSession;
               vrManager.setSession(xrSession);
               xrSession.addEventListener('end', self.exitVRBound);
-              xrSession.requestFrameOfReference('stage').then(function (frameOfReference) {
+              xrSession.requestFrameOfReference('eye-level').then(function (frameOfReference) {
                 self.frameOfReference = frameOfReference;
               });
               enterVRSuccess();
